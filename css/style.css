@@ -1,0 +1,87 @@
+:root
+{
+  --bright_orange: hsl(31, 77%, 52%);
+  --dark_cyan: hsl(184, 100%, 22%);
+  --very_dark_cyan: hsl(179, 100%, 13%);
+  --transparent_white: hsla(0, 0%, 100%, 0.75);
+  --very_light_gray: hsl(0, 0%, 95%);
+}
+
+body{
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container{
+  margin: 0 auto;
+  display: table;
+  position: relative;
+  transform: translateY(50%);
+}
+.card{
+  display: table-cell;
+  padding: 40px;
+  height: 300px;
+  width: 200px;
+  color: #fff;
+  margin: 0 auto;
+}
+h1{color: var(--very_light_gray);font-family: 'Big Shoulders Display', cursive;}
+p{font-weight: 500;color: hsl(0, 0%, 100%, 0.75);font-family: 'Lexend Deca', sans-serif;}
+
+/* BUTTONS*/
+.first{
+  background-color: var(--bright_orange);
+  border-radius: 5px 0 0 5px;
+}
+.second{
+ background-color: var(--dark_cyan);
+}
+.third{
+ background-color: var(--very_dark_cyan);
+ border-radius: 0 5px 5px 0;
+}
+.first button {
+  color:var(--bright_orange);
+}
+.second button{
+  color: var(--dark_cyan);
+}
+.third button{
+  color: var(--very_dark_cyan);
+}
+button{
+  border: solid 2px transparent;
+  border-radius: 20px;
+  background-color: var(--very_light_gray);
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 1s;
+  font-family: 'Lexend Deca', sans-serif;
+}
+button:active{
+  border:solid 2px var(--transparent_white);
+  background-color: transparent;
+  color: var(--transparent_white);
+  font-weight: 500;
+}
+button:hover{
+  border:solid 2px var(--transparent_white);
+  background-color: transparent;
+  color: var(--transparent_white);
+  font-weight: 500;
+}
+/* On screens that are 600px or less*/
+@media screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    position: static;
+    transform: none;
+  }
+  .card{
+    display:grid;}
+  .first{
+    border-radius: 5px 5px 0 0;}
+  .third{
+       border-radius: 0 0 5px 5px;}
+}
