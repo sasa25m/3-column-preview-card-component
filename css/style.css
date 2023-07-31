@@ -71,8 +71,8 @@ button:hover{
   color: var(--transparent_white);
   font-weight: 500;
 }
-/* On screens that are 600px or less*/
-@media screen and (max-width: 600px) {
+/* On screens that are 375px or less*/
+@media screen and (max-width: 375px) {
   .container {
     display: grid;
     position: static;
